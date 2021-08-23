@@ -1,0 +1,33 @@
+.feature-icon {
+  align-items: center;
+}
+.feature-icon-block {
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.features {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.features-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.list-of-features {
+  display: flex;
+  margin-left: -30px;
+}
+
+.list-of-features__item-feature {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: var(--card-set-item);
+}
