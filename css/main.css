@@ -5,6 +5,7 @@
   --primary-white-color: #e5e5e5;
   --primary-background-color: #ffffff;
   --card-set-item: 30px;
+  --primary-font-family: Roboto;
 }
 
 html {
@@ -15,16 +16,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-h1 {
-  color: var(--primary-background-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 h1,
@@ -62,6 +53,13 @@ a {
   list-style: none;
 }
 
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+  font-family: var(--primary-font-family), sans-serif;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -69,11 +67,20 @@ a {
   margin: 0 auto;
 }
 
-body {
-  background-color: var(--primary-background-color);
-  color: var(--primary-text-color);
-  letter-spacing: 0.03em;
-  font-family: Roboto, sans-serif;
+.banner__container {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .banner__container {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner__container {
+    width: 696px;
+  }
 }
 
 header {
@@ -88,14 +95,21 @@ header .container {
 .banner {
   background-color: #2f303a;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 1600px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .feature-icon {
@@ -676,11 +690,21 @@ a.nav-container__contacts {
   margin-bottom: 10px;
 }
 
-.main-title {
-  padding: 200px 252px 280px 252px;
-  min-width: 696px;
-  margin-bottom: 0px;
-  text-align: center;
+.banner__main-title {
+  margin: 0 auto;
+  color: var(--primary-background-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .banner__main-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .section-title {

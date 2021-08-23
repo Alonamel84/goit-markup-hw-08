@@ -8,11 +8,20 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.main-title {
-  padding: 200px 252px 280px 252px;
-  min-width: 696px;
-  margin-bottom: 0px;
-  text-align: center;
+.banner__main-title {
+  margin: 0 auto;
+  color: var(--primary-background-color);
+  font-weight: 900;
+  // font-size: 44px;
+  // line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .section-title {
   color: var(--title-text-color);
