@@ -392,11 +392,23 @@ footer {
 
 .footer-cont {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.left-footer {
-  margin-right: 70px;
+@media screen and (min-width: 1200px) {
+  .footer-cont {
+    align-items: baseline;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .left-footer {
+    margin-right: 70px;
+  }
 }
 
 .address {
@@ -418,8 +430,18 @@ footer {
   display: block;
 }
 
-.list.addressfooter li:not(:last-child) {
+.addressfooter li:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.addressfooter {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .addressfooter {
+    margin-bottom: 0;
+  }
 }
 
 .join {
@@ -505,11 +527,15 @@ footer {
 
 .text-overlay {
   position: absolute;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 77px;
+  padding-top: 77px;
   color: white;
   background-color: rgba(33, 150, 243, 0.9);
   font-size: 18px;
   line-height: 1.55;
-  height: 100%;
+  height: auto;
   width: 100%;
   top: 0%;
   left: 0%;
@@ -1092,10 +1118,18 @@ a.nav-container__contacts {
 
 .footer-subscribe-wrapper {
   display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-wrapper {
+    flex-direction: row;
+  }
 }
 
 .footer-form-input {
-  margin-right: 12px;
+  margin-right: 0px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
@@ -1104,6 +1138,13 @@ a.nav-container__contacts {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form-input {
+    margin-bottom: 0px;
+    margin-right: 12px;
+  }
 }
 
 .subscribe-wrapper {
@@ -1115,6 +1156,14 @@ a.nav-container__contacts {
 .subscribe-box {
   text-align: left;
   align-items: center;
-  margin-left: 93px;
+  margin-left: 0px;
+  margin-top: 60px;
+}
+
+@media screen and (mi-width: 1200px) {
+  .subscribe-box {
+    margin-left: 93px;
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -6,10 +6,20 @@ footer {
 
 .footer-cont {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    flex-direction: row;
+  }
 }
+
 .left-footer {
-  margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 .address {
   color: var(--primary-background-color);
@@ -28,10 +38,15 @@ footer {
   padding-top: 0px;
   display: block;
 }
-.list.addressfooter li:not(:last-child) {
+.addressfooter li:not(:last-child) {
   margin-bottom: 9px;
 }
-
+.addressfooter {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
 .join {
   justify-content: space-between;
   width: 206px;
