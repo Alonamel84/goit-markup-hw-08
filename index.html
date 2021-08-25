@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="web studio site" />
     <title>business-solution</title>
 
@@ -137,7 +139,12 @@
                 <h2 class="section-title">Наша команда</h2>
                   <ul class="list teamcards">
                     <li class="team-members">
-                        <img src="./images/igor_demyanenko.jpg" alt="igordemyanenkophotos" width="270">
+                        <picture>
+                            <source srcset="./images/igor_demyanenko.jpg" media="(min-width: 1200px)">
+                            <source srcset="./images/Igor_Dem_tab.jpg" media="(min-width: 768px)">
+                            <source srcset="./images/Igor_Dem_mob.jpg" media="(min-width: 480px)">
+                        <img src="./images/Igor_Dem_mob.jpg" alt="igordemyanenkophotos" >
+                        </picture>
                         <div class="team-photo">
                             <h3 class="name">Игорь Демьяненко</h3>
                             <p class="position">Product Designer</p>
@@ -178,7 +185,12 @@
                         </div>
                     </li>
                     <li class="team-members">
-                        <img src="./images/olgarepina.jpg" alt="olgarepinaphoto" width="270">
+                        <picture>
+                        <source srcset="./images/olgarepina.jpg" media="(min-width: 1200px)">
+                        <source srcset="./images/Olga_Rep_tab.jpg" media="(min-width: 768px)">
+                        <source srcset="./images/Olga_Rep_mob.jpg" media="(min-width: 480px)">
+                        <img src="./images/Olga_Rep_mob.jpg" alt="olgarepinaphoto">
+                        </picture>
                         <div class="team-photo">
                             <h3 class="name">Ольга Репина</h3>
                             <p class="position">Frontend Developer</p>
@@ -219,7 +231,13 @@
                         </div>
                     </li>
                     <li class="team-members">
-                        <img src="./images/nikolaytarasov.jpg" alt="nikolaytarasovphoto" width="270">
+                        <picture>
+                            <source srcset="/images/nikolaytarasov.jpg" media="(min-width: 1200px)">
+                            <source srcset="./images/Nik_Tar_tab.jpg" media="(min-width: 768px)">
+                            <source srcset="./images/Nik_Tar_mob.jpg" media="(min-width: 480px)">
+                        
+                        <img src="./images/Nik_Tar_mob.jpg" alt="nikolaytarasovphoto">
+                        </picture>
                         <div class="team-photo">
                             <h3 class="name">Николай Тарасов</h3>
                             <p class="position">Marketing</p>
@@ -260,7 +278,13 @@
                         </div>
                     </li>
                     <li class="team-members">
-                        <img src="./images/Mikhail_ermakov.jpg" alt="mikhailermakovphoto" width="270">
+                        <picture>
+                            <source srcset="/images/Mikhail_ermakov.jpg" media="(min-width: 1200px)">
+                            <source srcset="./images/Mih_Erm_tab.jpg" media="(min-width: 768px)">
+                            <source srcset="./images/Mih_Erm_mob.jpg" media="(min-width: 480px)">
+           
+                        <img src="./images/Mih_Erm_mob.jpg" alt="mikhailermakovphoto">
+                                    </picture>
                         <div class="team-photo">
                             <h3 class="name">Михаил Ермаков</h3>
                             <p class="position">UI Designer</p>
@@ -304,7 +328,7 @@
 
             </div>
         </section>
-        <!-- <section class="customers">
+        <section class="customers">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="list customer-list">
@@ -358,7 +382,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     <!-- </main>
     <footer>
         <div class="container footer-cont">
