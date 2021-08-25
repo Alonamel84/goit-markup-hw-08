@@ -29,6 +29,10 @@
   cursor: pointer;
   color: var(--primary-background-color);
   border: transparent;
+  width: 200px;
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+  }
 }
 .icon-subscribe {
   margin-left: 10px;
