@@ -28,12 +28,14 @@
   align-items: center;
 }
 .subscribe-box {
-  text-align: left;
+  text-align: center;
   align-items: center;
   margin-left: 0px;
   margin-top: 60px;
-  @media screen and (mi-width: 1200px) {
+  width: auto;
+  @media screen and (min-width: 1200px) {
     margin-left: 93px;
     margin-top: 0;
+    text-align: left;
   }
 }

@@ -10,6 +10,11 @@ footer {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: initial;
+    justify-content: space-around;
+    align-items: baseline;
+  }
   @media screen and (min-width: 1200px) {
     align-items: baseline;
     flex-direction: row;
@@ -17,8 +22,10 @@ footer {
 }
 
 .left-footer {
+  text-align: center;
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    text-align: left;
   }
 }
 .address {
@@ -43,7 +50,7 @@ footer {
 }
 .addressfooter {
   margin-bottom: 60px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
 }
