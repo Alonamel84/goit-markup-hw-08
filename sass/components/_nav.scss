@@ -38,6 +38,16 @@
     margin-right: 50px;
   }
 }
+.nav-container_right {
+  display: flex;
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
 .nav-container__item a {
   display: block;
   align-items: center;
