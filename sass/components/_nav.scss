@@ -34,9 +34,9 @@
 .nav-container {
   display: flex;
 
-  // .list &:not(:last-child) {
-  //   margin-right: 50px;
-  // }
+  .list &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 .nav-container__item a {
   display: block;
