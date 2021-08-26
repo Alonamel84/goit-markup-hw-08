@@ -5,27 +5,26 @@ footer {
 }
 
 .footer-cont {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: initial;
     justify-content: space-around;
     align-items: baseline;
   }
   @media screen and (min-width: 1200px) {
     align-items: baseline;
-
-    // flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 
 .left-footer {
   text-align: center;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
   @media screen and (min-width: 1200px) {
-    // margin-right: 70px;
+    margin-right: 70px;
     text-align: left;
   }
 }
@@ -63,4 +62,9 @@ footer {
 
 .list-join {
   display: flex;
+}
+.join-block {
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
 }
