@@ -165,6 +165,13 @@ header .container {
   color: #2196f3;
 }
 
+.mobile-link_current {
+  color: #2196f3;
+  font-size: 40px;
+  line-height: 1.17;
+  font-weight: 500;
+}
+
 .mobile-tel {
   color: #2196f3;
   font-size: 34px;
