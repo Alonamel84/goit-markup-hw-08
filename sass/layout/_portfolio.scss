@@ -48,6 +48,13 @@
   border-bottom: #eeeeee solid 1px;
   border-left: #eeeeee solid 1px;
   border-right: #eeeeee solid 1px;
+  height: auto;
+  @media screen and (min-width: 767px) {
+    height: 146px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 110px;
+  }
 }
 
 .portfolio-filter {

@@ -1094,7 +1094,7 @@ footer {
 @media screen and (min-width: 768px) {
   .nav-container_right {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     padding-top: 21px;
     padding-bottom: 21px;
@@ -1285,7 +1285,7 @@ a.nav-container__contacts {
   text-align: center;
   color: var(--primary-background-color);
   background-color: var(--accent-color);
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
