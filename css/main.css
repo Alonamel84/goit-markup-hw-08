@@ -180,6 +180,12 @@ header .container {
   font-weight: 500;
 }
 
+@media screen and (min-width: 480px) {
+  .mobile-link_current {
+    font-size: 30px;
+  }
+}
+
 .mobile-tel {
   color: #2196f3;
   font-size: 25px;
