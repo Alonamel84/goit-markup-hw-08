@@ -66,6 +66,8 @@
   flex-direction: row;
   border: transparent;
   border-width: 1px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus,
   &:hover {
@@ -74,7 +76,7 @@
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 3px 1px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .portfolio_button-item:nth-child(-n + 3) {

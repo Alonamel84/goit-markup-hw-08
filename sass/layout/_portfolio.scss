@@ -49,11 +49,11 @@
   border-left: #eeeeee solid 1px;
   border-right: #eeeeee solid 1px;
   height: auto;
-  @media screen and (min-width: 767px) {
-    height: 146px;
+  @media screen and (min-width: 768px) {
+    height: 100%;
   }
   @media screen and (min-width: 1200px) {
-    height: 110px;
+    height: auto;
   }
 }
 
@@ -97,8 +97,18 @@
 .card-overlay {
   position: relative;
   overflow: hidden;
+  @media screen and (min-width: 768px) {
+    flex-shrink: 0;
+  }
 }
 
 .card-overlay-link:hover .text-overlay {
   transform: translateY(0%);
+}
+.card-overlay-link {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
