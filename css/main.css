@@ -570,16 +570,11 @@ footer {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .left-footer {
-    width: 50%;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .left-footer {
     margin-right: 70px;
     text-align: left;
+    flex-shrink: 0;
   }
 }
 
@@ -629,6 +624,12 @@ footer {
 @media screen and (min-width: 768px) {
   .join-block {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .join-block {
+    width: auto;
   }
 }
 
@@ -998,6 +999,16 @@ footer {
   color: #ffffff;
   padding-top: 0px;
   padding-bottom: 0%;
+}
+
+.logo-first {
+  font-family: Raleway, sans-serif;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .site-nav {
