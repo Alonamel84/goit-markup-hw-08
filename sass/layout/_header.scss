@@ -25,6 +25,7 @@ header .container {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  z-index: 1;
 }
 .menu-close {
   position: absolute;
